@@ -1,0 +1,280 @@
+@font-face {
+  font-family: Blob;
+  src: url(assets/font/BlobSpongeyLowercase-wKq3.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Blob;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+div::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+button,
+input,
+select,
+textarea,
+a {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.wrapper {
+  max-width: 1440px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-image: url(assets/img/background/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 320vh;
+}
+nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* height: 80px; */
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+nav > b {
+  font-size: 25px;
+  color: black;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.links > a {
+  color: black;
+  text-decoration: none;
+}
+.section1 {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 150px;
+}
+.section1 > b {
+  font-size: 35px;
+  color: red;
+  text-align: center;
+}
+.section1 > p {
+  max-width: 40%;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+.trump {
+  position: absolute;
+  top: 7%;
+  left: 0;
+  width: 29%;
+}
+.kamala {
+  position: absolute;
+  top: 7%;
+  right: 0;
+  width: 27%;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.icons > a {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.section1 > button {
+  width: 200px;
+  height: 70px;
+  font-size: 30px;
+  color: #fff;
+  background-color: red;
+  border-radius: 10px;
+  box-shadow: -5px 5px 20px red;
+  transform: skew(-10deg);
+}
+
+.section1 > .address {
+  max-width: 100%;
+}
+
+
+.section2,
+.section3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+.section2 > b,
+.section3 > b {
+  font-size: 35px;
+  color: red;
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: 30px;
+  background-color: #fff;
+  display: flex;
+  text-align: center;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.582);
+}
+
+
+.cards {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.card {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.582);
+
+  align-items: center;
+  padding-block: 12px;
+  border-radius: 12px;
+  gap: 12px;
+  padding-inline: 24px;
+}
+.card > img,
+.card > video {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.card > b {
+  font-size: 24px;
+  color: red;
+}
+.card > p {
+  font-size: 18px;
+  color: black;
+  text-align: left;
+}
+.section3 {
+  padding-top: 150px;
+}
+.container {
+  width: 70%;
+  height: 35vw;
+  background-color: #ffffffa1;
+  border-radius: 12px;
+  display: flex;
+  padding-inline: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+.container > img {
+  width: 50%;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.item > img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+.item_info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.item_info > b {
+  font-size: 22px;
+  color: red;
+}
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  text-align: center;
+  padding-top: 150px;
+  color: #000;
+  margin-top: 150px;
+  
+}
+
+@media (max-width: 830px) {
+  .container {
+    height: auto;
+
+  }
+  .item > img {
+    width: 40px;
+    height: 40px;
+  }
+  .section1 > b {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 625px) {
+  .cards {
+     justify-content: center;
+  }
+  .card {
+    width: 70%;
+    height: auto;
+  }
+  nav {
+    margin-bottom: 50px;
+  }
+}
+
+
+
+@media (max-width: 500px) {
+  .container {
+      flex-direction: column;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+}
